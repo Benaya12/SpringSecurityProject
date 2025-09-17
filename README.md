@@ -46,3 +46,30 @@ src/main/java/org/example/springsecuritydemo/
 │
 └── Service/
     └── AuthApiUserDetailsService.java
+
+התקנה והרצה
+1. בניית הפרויקט
+mvn clean install
+
+
+או אם אתה משתמש ב־Gradle:
+
+./gradlew build
+
+2. הרצת האפליקציה
+mvn spring-boot:run
+
+
+או עם Gradle:
+
+./gradlew bootRun
+
+
+האפליקציה תרוץ ב־http://localhost:8080.
+
+משתמשים ותפקידים ראשוניים
+משתמש	סיסמה	תפקיד
+roei	roei	ROLE_ADMIN
+yossi	yossi	ROLE_USER
+
+ניתן להוסיף משתמשים נוספים דרך מחלקת UserInitializer או דרך מסד הנתונים.
